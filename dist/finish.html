@@ -1,308 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>finish</title>
-    <script type="module" crossorigin src="/Class08-HW-bootstrap-webDesign/assets/main-d07d1839.js"></script>
-    <link rel="stylesheet" href="/Class08-HW-bootstrap-webDesign/assets/main-1db04947.css">
-  </head>
-  <body>
-    
-<div class="container py-4">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <a class="navbar-brand" href="#">
-      <img class="img-fluid logo"
-        src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/logo.png?raw=true"
-        alt="LEARNING">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>finish</title>
+  <script type="module" crossorigin src="/Class08-HW-bootstrap-webDesign/assets/main-a5faaba8.js"></script>
+  <link rel="stylesheet" href="/Class08-HW-bootstrap-webDesign/assets/main-c72e1437.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+
+
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-        <li class="nav-item dropdown ms-32">
 
 
-          <!-- dropdown 按鈕區塊 -->
-          <div class="d-flex justify-content-between">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-            <div class="d-flex justify-content-start align-items-center">
 
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              探索
+      <div class="offcanvas-body">
+
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </a>
 
-            <div class="d-flex align-items-center position-relative d-none d-xl-flex mx-4">
-              <span class="search material-symbols-outlined text-neutral-300 position-absolute top-50 start-0 translate-middle-y ms-2">search</span>
-              <input class="form-control ps-5" type="text" placeholder="搜尋各種音樂、數學、程式及設計課程">
-              <button type="button" class="search-btn btn btn-sm btn-primary position-absolute top-50 end-0 translate-middle-y me-2">搜尋</button>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            
+          </li>
 
-          </div>
+        </ul>
 
-            <div class="col d-flex justify-content-end align-items-center ms-4">
-              <div class="position-relative">
-                <div class="head-icon dropdown position-relative user-select-none">
-                  <span class="material-symbols-outlined">notifications</span>
-                  <span class="marker"></span>
-                </div>
-              </div>
-              <div class="position-relative">
-                <div class="head-icon dropdown position-relative user-select-none" data-bs-toggle="dropdown"
-                  id="shopcart">
-                  <span class=" px-4 material-symbols-outlined">shopping_cart</span>
-                  <!-- <span class="marker marker-num">2</span> -->
-                </div>
-                <ul class="dropdown-menu" aria-labelledby="shopcart">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <a class="login-btn btn btn-primary px-4 d-none d-xl-flex" href="#">登入 / 註冊</a>
-            </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
 
-            <!-- dropdown 開始 -->
-            <div class="dropdown-menu search-all">
-
-              <div class="d-flex">
-                <!-- 第一層 -->
-                <ul class="group first p-12 list-unstyled">
-                  <li class="py-12 px-4 mb-2 ">探索全部</li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>音樂</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>攝影</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4 open" href="#">
-
-                      <p>程式</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>程式</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>藝術</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>人文</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>行銷</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>投資理財</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>心靈成長</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                </ul>
-                <!-- 第二層 -->
-                <ul class="group second p-12">
-                  <li class="py-12 px-4 mb-2">所有程式</li>
-                  <li><a class="dropdown-item py-12 px-4" href="#">
-                      <p>第二層</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                </ul>
-              </div>
-            </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-    <div class="block-space">
-      <div class="container">
-      <div class="mx-auto text-center pt-4 pb-4">
-        <h1 class="text-center my-2 title-deco">恭喜，Jessica！</h1>
-        <h1 class="text-center my-2 title-deco pb-3">您已購買完成</h1>
-        <p class="mb-3 mb-3">感謝您在 Learning 購買了課程，我們已將訂單相關資訊發送至您的電子信箱。</p>
-      </div>
-  
-      <div class="mx-auto text-start py-4">
-        <h5 class="mb-3 mb-3">更多程式學習相關課程</h5>
-      </div>
-  
-      <div class="card-list">
-  
-        <div class="row ">
-  
-          <div class="card-item2 col-lg-3 col-md-3 col-md-12">
-            <img src="/Class08-HW-bootstrap-webDesign/assets/course-1-5aa38dad.png" class="card-img-top" alt="創意寫作工坊">
-  
-            <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
-              優惠倒數10天
-            </div>
-  
-            <div class="card-body py-4 px-3">
-  
-              <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
-  
-              <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-1-cf59f6fa.png" class="me-2"
-                  alt="Kelly Hsu">
-                <p>Kelly Hsu</p>
-              </div>
-              <div class="student d-flex justify-content-between mb-2">
-                <p class="fw-600 f-blue">募資進度81%</p>
-                <p class="fs-14">已有521位同學加入</p>
-              </div>
-  
-              <div class="progress mb-2" style="height: 8px;">
-                <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-  
-              <div class="price d-flex">
-                <p class="me-2 fw-600">NT$2,480</p>
-                <p class="fs-14 line-through">NT$3,280</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card-item2 col-lg-3 col-md-3 col-md-12">
-            <img src="/Class08-HW-bootstrap-webDesign/assets/course-2-af95b296.png" class="card-img-top" alt="創意寫作工坊">
-  
-            <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
-              優惠倒數10天
-            </div>
-  
-            <div class="card-body py-4 px-3">
-  
-              <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
-  
-              <div class="author d-flex align-items-center mb-4"><img src="data:image/png;base64,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" class="me-2"
-                  alt="Kelly Hsu">
-                <p>Kelly Hsu</p>
-              </div>
-              <div class="student d-flex justify-content-between mb-2">
-                <p class="fw-600 f-blue">募資進度81%</p>
-                <p class="fs-14">已有521位同學加入</p>
-              </div>
-  
-              <div class="progress mb-2" style="height: 8px;">
-                <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-  
-              <div class="price d-flex">
-                <p class="me-2 fw-600">NT$2,480</p>
-                <p class="fs-14 line-through">NT$3,280</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card-item2 col-lg-3 col-md-3 col-md-12">
-            <img src="/Class08-HW-bootstrap-webDesign/assets/course-3-a0bf74b7.png" class="card-img-top" alt="創意寫作工坊">
-  
-            <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
-              優惠倒數10天
-            </div>
-  
-            <div class="card-body py-4 px-3">
-  
-              <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
-  
-              <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-3-af2de766.png" class="me-2"
-                  alt="Kelly Hsu">
-                <p>Kelly Hsu</p>
-              </div>
-              <div class="student d-flex justify-content-between mb-2">
-                <p class="fw-600 f-blue">募資進度81%</p>
-                <p class="fs-14">已有521位同學加入</p>
-              </div>
-  
-              <div class="progress mb-2" style="height: 8px;">
-                <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-  
-              <div class="price d-flex">
-                <p class="me-2 fw-600">NT$2,480</p>
-                <p class="fs-14 line-through">NT$3,280</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card-item2 col-lg-3 col-md-4 col-md-12">
-            <img src="/Class08-HW-bootstrap-webDesign/assets/course-4-e273136f.png" class="card-img-top" alt="創意寫作工坊">
-  
-            <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
-              優惠倒數10天
-            </div>
-  
-            <div class="card-body py-4 px-3">
-  
-              <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
-  
-              <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-4-fac02bdb.png" class="me-2"
-                  alt="Kelly Hsu">
-                <p>Kelly Hsu</p>
-              </div>
-              <div class="student d-flex justify-content-between mb-2">
-                <p class="fw-600 f-blue">募資進度81%</p>
-                <p class="fs-14">已有521位同學加入</p>
-              </div>
-  
-              <div class="progress mb-2" style="height: 8px;">
-                <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-  
-              <div class="price d-flex">
-                <p class="me-2 fw-600">NT$2,480</p>
-                <p class="fs-14 line-through">NT$3,280</p>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
       </div>
 
-      <div class="d-flex ">
-        <a href="#" class="btn btn-outline-primary px-3">立即前往上課</a>
-        <a href="#" class="btn btn-success px-3">查看訂單記錄</a>
-      </div>
 
     </div>
+
+
   </div>
+</nav>    <div class="container-fluid finfish-block-space">
+
+
+      <div class="buy-finfish-block-text">
+
+        <div class="container">
+          <div class="mx-auto text-center pt-4 pb-4">
+
+            <div class="d-flex justify-content-center align-items-center">
+            <div class="yes-img ">
+              <span class="material-symbols-outlined">
+                check
+                </span>
+            </div>
+            <div class="title-block">
+              <h1 class="text-center my-2 title-deco">恭喜，Jessica！</h1>
+              <h1 class="text-center my-2 title-deco pb-3">您已購買完成</h1>
+            </div>
+          </div>
+
+            <p class="mb-3 mb-3">感謝您在 Learning 購買了課程，我們已將訂單相關資訊發送至您的電子信箱。</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary px-4 py-2 mx-1">立即前往上課</button>
+            <button type="button" class="btn btn-outline-primary px-4 py-2 mx-1">查看訂單記錄</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid buy-finfish-item-card">
+
+
+        <div class="container">
+
+          <div class="text-start py-4 mb-3 ">
+            <span class="deco "><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAESSURBVHgBpVPLVcNADBwZDhxTgqkA00GoII8KwAceuSV0YHdgTnBMCaEDdwBUgEvgmANEzNovRFkrkM+8t7teaTS7srSCbbjXCecCgk+uMzxL6dHEDR5ryvkjsp5TpImpiSuwROZYhx7VF0gwwI44xVQHWGDSnrDEC4PnW9ldajdMPIPy35zhQWictUaL4JTeLRqONLLVQUBxBBKe9IbD0ST4Qo7uevshpPmN63UfjHXI+ZaOkZO/xSPHnD1Rh81mI91phhO84m9crYI3BbpyhuD0H4GG5btEJaHFTSMtULnB2r4Fi5Tc6WqzFhBcoI+SjNIRHfUFFO8RrWauBZ6kar8tTOntWygMMay58eWR7/dWPzZzRx+ljelZAAAAAElFTkSuQmCC" alt=""></span>
+            <h5 class=" d-inline-block align-bottom">更多程式學習相關課程</h5>
+          </div>
+
+          <div class="card-list">
+
+            <div class="row ">
+
+              <div class="card-item2 col-lg-3 col-md-3 col-md-12">
+                <img src="/Class08-HW-bootstrap-webDesign/assets/course-1-5aa38dad.png" class="card-img-top" alt="創意寫作工坊">
+
+                <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
+                  優惠倒數10天
+                </div>
+
+                <div class="card-body py-4 px-3">
+
+                  <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
+
+                  <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-1-cf59f6fa.png"
+                      class="me-2" alt="Kelly Hsu">
+                    <p>Kelly Hsu</p>
+                  </div>
+                  <div class="student d-flex justify-content-between mb-2">
+                    <p class="fw-600 f-blue">募資進度81%</p>
+                    <p class="fs-14">已有521位同學加入</p>
+                  </div>
+
+                  <div class="progress mb-2" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="price d-flex">
+                    <p class="me-2 fw-600">NT$2,480</p>
+                    <p class="fs-14 line-through">NT$3,280</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-item2 col-lg-3 col-md-3 col-md-12">
+                <img src="/Class08-HW-bootstrap-webDesign/assets/course-2-af95b296.png" class="card-img-top" alt="創意寫作工坊">
+
+                <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
+                  優惠倒數10天
+                </div>
+
+                <div class="card-body py-4 px-3">
+
+                  <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
+
+                  <div class="author d-flex align-items-center mb-4"><img src="data:image/png;base64,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"
+                      class="me-2" alt="Kelly Hsu">
+                    <p>Kelly Hsu</p>
+                  </div>
+                  <div class="student d-flex justify-content-between mb-2">
+                    <p class="fw-600 f-blue">募資進度81%</p>
+                    <p class="fs-14">已有521位同學加入</p>
+                  </div>
+
+                  <div class="progress mb-2" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="price d-flex">
+                    <p class="me-2 fw-600">NT$2,480</p>
+                    <p class="fs-14 line-through">NT$3,280</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-item2 col-lg-3 col-md-3 col-md-12">
+                <img src="/Class08-HW-bootstrap-webDesign/assets/course-3-a0bf74b7.png" class="card-img-top" alt="創意寫作工坊">
+
+                <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
+                  優惠倒數10天
+                </div>
+
+                <div class="card-body py-4 px-3">
+
+                  <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
+
+                  <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-3-af2de766.png"
+                      class="me-2" alt="Kelly Hsu">
+                    <p>Kelly Hsu</p>
+                  </div>
+                  <div class="student d-flex justify-content-between mb-2">
+                    <p class="fw-600 f-blue">募資進度81%</p>
+                    <p class="fs-14">已有521位同學加入</p>
+                  </div>
+
+                  <div class="progress mb-2" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="price d-flex">
+                    <p class="me-2 fw-600">NT$2,480</p>
+                    <p class="fs-14 line-through">NT$3,280</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-item2 col-lg-3 col-md-4 col-md-12">
+                <img src="/Class08-HW-bootstrap-webDesign/assets/course-4-e273136f.png" class="card-img-top" alt="創意寫作工坊">
+
+                <div class="text-overlay position-absolute f-blue fs-14 fw-600" style="top: 16px; left: 16px;">
+                  優惠倒數10天
+                </div>
+
+                <div class="card-body py-4 px-3">
+
+                  <h2 class="fs-5 fw-600 mb-2">創意寫作工坊：從靈感到出版的全過程</h2>
+
+                  <div class="author d-flex align-items-center mb-4"><img src="/Class08-HW-bootstrap-webDesign/assets/avatar-4-fac02bdb.png"
+                      class="me-2" alt="Kelly Hsu">
+                    <p>Kelly Hsu</p>
+                  </div>
+                  <div class="student d-flex justify-content-between mb-2">
+                    <p class="fw-600 f-blue">募資進度81%</p>
+                    <p class="fs-14">已有521位同學加入</p>
+                  </div>
+
+                  <div class="progress mb-2" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="price d-flex">
+                    <p class="me-2 fw-600">NT$2,480</p>
+                    <p class="fs-14 line-through">NT$3,280</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
 
 
     <footer>
@@ -333,6 +280,7 @@
         </div>
     </div>
 </footer>
-    
-  </body>
+      
+</body>
+
 </html>
