@@ -50,3 +50,5 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 
 
 git remote add origin https://github.com/RedVluvRena/Class08-HW-bootstrap-webDesign.git
+
+git commit -m '更新上傳'
