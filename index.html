@@ -11,145 +11,65 @@
 </head>
 
 <body>
-  
-<!-- <div class="container py-4">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <a class="navbar-brand" href="index.html">
-      <img class="img-fluid logo"
-        src="../assets/images/logo.png"
-        alt="LEARNING">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+
+
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-        <li class="nav-item dropdown ms-32">
 
 
- 
-          <div class="d-flex justify-content-between">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-            <div class="d-flex justify-content-start align-items-center">
 
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              探索
+      <div class="offcanvas-body">
+
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </a>
 
-            <div class="d-flex align-items-center position-relative d-none d-xl-flex mx-4">
-              <span class="search material-symbols-outlined text-neutral-300 position-absolute top-50 start-0 translate-middle-y ms-2">search</span>
-              <input class="form-control ps-5" type="text" placeholder="搜尋各種音樂、數學、程式及設計課程">
-              <button type="button" class="search-btn btn btn-sm btn-primary position-absolute top-50 end-0 translate-middle-y me-2">搜尋</button>
-            </div>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            
+          </li>
 
-          </div>
+        </ul>
 
-            <div class="col d-flex justify-content-end align-items-center ms-4">
-              <div class="position-relative">
-                <div class="head-icon dropdown position-relative user-select-none">
-                  <span class="material-symbols-outlined">notifications</span>
-                  <span class="marker"></span>
-                </div>
-              </div>
-              <div class="position-relative">
-                <div class="head-icon dropdown position-relative user-select-none" data-bs-toggle="dropdown"
-                  id="shopcart">
-                  <span class=" px-4 material-symbols-outlined">shopping_cart</span>
-                  <span class="marker marker-num">2</span>
-                </div>
-                <ul class="dropdown-menu" aria-labelledby="shopcart">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-              <a class="login-btn btn btn-primary px-4 d-none d-xl-flex" href="finish.html">登入 / 註冊</a>
-            </div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
 
-            dropdown 開始
-            <div class="dropdown-menu search-all">
+      </div>
 
-              <div class="d-flex">
-                第一層
-                <ul class="group first p-12 list-unstyled">
-                  <li class="py-12 px-4 mb-2 ">探索全部</li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
 
-                      <p>音樂</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>攝影</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4 open" href="#">
-
-                      <p>程式</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>程式</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>藝術</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>人文</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>行銷</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>投資理財</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>心靈成長</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>職場技能</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                  <li><a class=" dropdown-item py-12 px-4" href="#">
-
-                      <p>生活品味</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                </ul>
-                第二層
-                <ul class="group second p-12">
-                  <li class="py-12 px-4 mb-2">所有程式</li>
-                  <li><a class="dropdown-item py-12 px-4" href="#">
-                      <p>第二層</p><i class="bi bi-chevron-right"></i>
-                    </a></li>
-                </ul>
-              </div>
-            </div>
-        </li>
-      </ul>
     </div>
-  </nav>
-</div> -->    <!-- Swiper JS -->
+
+
+  </div>
+</nav>    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
