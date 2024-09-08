@@ -3,10 +3,11 @@
 header {
   nav.frame-style {
     border-radius: 70px;
+    margin-bottom: 40px;
   }
 
   .navbar-brand {
-    width: 125px;
+    width: 120px;
 
     @include media-breakpoint-up(xl) {
       width: 200px;
@@ -20,8 +21,9 @@ header {
   }
 
   .form-control {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 38px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
     @include media-breakpoint-up(xl) {
       width: 425px;
