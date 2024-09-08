@@ -1,0 +1,111 @@
+
+.fa-brands, .fab {
+  font-family: " Font Awesome 6 Brands ";
+}
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+
+footer {
+  background: #282828;
+  border-radius: 80px 80px 0 0;
+  color: $neutral-0;
+  padding: 100px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      margin-left: 32px;
+      color: $neutral-0;
+      text-decoration: none;
+    }
+  }
+
+  .boxitem {
+    &.icon {
+      margin-top: 1rem;
+
+       a {
+        border: 1px $neutral-0 solid;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        margin-left: 16px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      .bi, .fa-brands {
+        color: $neutral-0;
+        font-size: 1.25rem;
+        display: block;
+        line-height: 1rem;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 48px 24px;
+    border-radius: 48px 48px 0 0;
+  }
+
+  .footer {
+    .col-12 {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .my-p {
+        a {
+          display: block;
+          margin-left: 0;
+          margin-bottom: 16px;
+        }
+
+        margin: 40px 0 8px;
+      }
+
+      &.copyright {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .divbox {
+      &.icon > a {
+        margin: 0 16px 16px 0;
+      }
+
+      a {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+

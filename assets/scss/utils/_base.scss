@@ -1,0 +1,56 @@
+body {
+  font-family: $font-family-primary;
+  position: relative;
+  z-index: -5;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// img-fluid
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+p {
+  letter-spacing: 0.05em;
+}
+
+h2.title {
+  letter-spacing: 0.1em;
+}
+
+.block-space {
+    margin: 150px auto;
+  // margin: 150px auto 10px auto ;
+  overflow: hidden;
+
+  @include pad {
+    margin: 90px auto;
+  }
+}
+
+.container-fluid {
+  &.swiper {
+    padding: 0;
+  }
+}
+
+
+.mycourselist3 .evaluatebox,
+.mycourselist2 .font-icon,
+.block4 .font-icon,
+.mySwiper2 .font-icon {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: #f6bd2b;
+}
+
