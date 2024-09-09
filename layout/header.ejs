@@ -158,13 +158,24 @@
               search
             </span>
             <!-- 搜尋框內容 -->
-            <input class="form-control postion-relative" type="search" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search" />
+            <label class="input-group-text search-text" for="search">搜尋文章</label>
+            <input class="form-control postion-relative " id="search" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search" />
             <!-- 搜尋按鍵btn -->
             <button class="btn btn-sm btn-primary position-absolute top-50 end-0 translate-middle-y me-2" type="submit">
               搜尋
             </button>
           </form>
     
+
+          <!-- <div class="input-group w-100 my-3">
+            <label class="input-group-text search-text ps-20" for="search">搜尋文章</label>
+            <input type="text" class="form-control py-12 ps-0" id="search" aria-label="Amount (to the nearest dollar)">
+            <a href="#" class="input-group-text pe-14">
+              <i class="bi bi-search green-200"></i>
+            </a>
+          </div> -->
+
+
         </li>
 
       </ul>
@@ -195,7 +206,7 @@
           <li class="nav-item me-4 pt-1">
             <button type="button" class="btn position-relative p-0">
 
-              <span class="material-symbols-outlined unfilled">notifications</span>
+             <a href="finish.html"> <span class="material-symbols-outlined unfilled">notifications</span></a>
 
               <span
                 class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle">
@@ -227,6 +238,7 @@
       <!-- 手機版內層設置 -->
       <div class="offcanvas offcanvas-end d-flex d-xl-none" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
+
         <!-- <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
