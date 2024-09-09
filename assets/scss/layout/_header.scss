@@ -8,7 +8,7 @@ header {
 
   .navbar-brand {
     width: 120px;
-    
+
     @include media-breakpoint-up(xl) {
       width: 200px;
     }
@@ -22,17 +22,19 @@ header {
 
   .form-control {
     padding-left: 38px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     @include media-breakpoint-up(xl) {
-      width: 425px;
+      width: 400px;
     }
   }
 
   .search-text{
     color: #ADB5BD;
+    text-align: left;
   }
+
   .input-group:focus-within .search-text {
     color: #212529;
     font-weight: bold;
@@ -79,7 +81,7 @@ header {
   // 範圍斷點
   // @include media-breakpoint-between(md, xl) { ... }
   
-  
+  // -----------
   // 電腦版探索選單未完
   //   .dropdown-item {
   //     padding: 12px;
